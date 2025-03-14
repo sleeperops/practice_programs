@@ -2,7 +2,7 @@
 # enter first input
 # enter second input
 # if first input is not equal to second
-# print 'not a number'
+# print 'not equal'
 # else print 'equal'
 
 first_input = input('Enter the first number: ')
