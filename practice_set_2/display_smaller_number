@@ -4,3 +4,11 @@
 # if first and second input can be transformed into integers
 # compare the two inputs and print the smaller, if they are equal print equal
 # else, print 'not numbers'
+
+def smaller_number(first_num, second_num):
+    if first_num < second_num:
+        return first_num
+    elif second_num < first_num:
+        return second_num
+    else:
+        return 'equal'
