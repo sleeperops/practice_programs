@@ -7,3 +7,15 @@
 # else if its already in the list, skip
 # print the unduplicating list
 
+input_numbers = []
+unduplicating_list = []
+
+for _ in range(10):
+    user_input = input('Enter a number: ')
+    input_numbers.append(user_input)
+
+for numbers in input_numbers:
+    if numbers not in unduplicating_list:
+        unduplicating_list.append(numbers)
+
+print(unduplicating_list)
