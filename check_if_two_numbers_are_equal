@@ -16,7 +16,5 @@ except:
 def compare_ab(a, b):
     if a == b:
         return 'Equal'
-    else: 
-        return 'Not Equal'
 
 print(f'Answer: {compare_ab(input_a, input_b)}')
