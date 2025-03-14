@@ -1,1 +1,13 @@
-
+# Input numbers and print the average
+# initialize a list called input_list
+# run a while loop as long as it true
+# for every loop, ask the user for an input
+# try if the input can be converted to an integer
+# > if yes, append it to input_list
+# else if it is not an integer print 'not a number' and break from the loop
+# second part ====================
+# Initialize a total
+# Initialize a counter
+# run a for loop through input_list and add every item to the total
+# divide the total by the counter
+# print the result
