@@ -21,3 +21,12 @@ while True:
     except:
         print('>>Input is not a number! ')
         break
+# computes the average
+total = 0
+counter = 0
+for num in input_numbers:
+    total += num
+    counter += 1
+
+result = total/counter
+print(result)
