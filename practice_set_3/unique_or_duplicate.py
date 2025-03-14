@@ -8,3 +8,12 @@
 # > add the number to the input_numbers list
 # else if it is not an integer print 'not a number' and break from the loop
 
+input_numbers = []
+while True:
+    try:
+        user_input = int(input(f'Enter a number: '))
+        input_numbers.append(user_input)
+    
+    except:
+        print('>>Input is not a number! ')
+        break
