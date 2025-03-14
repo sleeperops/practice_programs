@@ -1,4 +1,4 @@
-# checks if the number is unique or a duplicate
+# finds the lowest number
 # initialize a list called input_list
 # run a while loop as long as it is true
 # for every loop, ask the user for an input
