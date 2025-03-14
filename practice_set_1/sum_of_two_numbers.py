@@ -4,3 +4,11 @@
 
 # add the first input to the second input
 # # display the sum
+
+input_a = input('Input the first number: ')
+input_b = input('Input the second number: ')
+
+def sum_ab(a, b):
+    return a + b
+
+print(f'Answer: {sum_ab(input_a, input_b)}')
