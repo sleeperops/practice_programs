@@ -17,6 +17,6 @@ while True:
     except:
         print('>>Input is not a number! ')
         break
-print(input_numbers)
-input_numbers.sort
-print(input_numbers)
+
+input_numbers.sort()
+print(f'Lowest Number: {input_numbers[0]}')
