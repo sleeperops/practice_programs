@@ -1,0 +1,6 @@
+# print the smaller number
+# enter first input
+# enter second input
+# if first and second input can be transformed into integers
+# compare the two inputs and print the smaller, if they are equal print equal
+# else, print 'not numbers'
