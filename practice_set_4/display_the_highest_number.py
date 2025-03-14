@@ -7,3 +7,14 @@
 # else if it is not an integer print 'not a number' and break from the loop
 # sort the input_numbers list using sort() function
 # print the [-1] index or the biggest one
+
+# accepts input
+input_numbers = []
+while True:
+    try:
+        user_input = int(input(f'Enter a number: '))
+        input_numbers.append(user_input)
+    
+    except:
+        print('>>Input is not a number! ')
+        break
