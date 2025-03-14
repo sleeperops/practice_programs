@@ -1,1 +1,9 @@
+# use a for loop to ask for ten numbers
+# initialize a list named 'input_numbers' that will store all of the inputs
+# initialize an empty list named 'unduplicating_list'
+# run a for loop in the 'input_numbers' list
+# for every loop check if the numbers in that list is in the unduplicating list
+# if not, add it
+# else if its already in the list, skip
+# print the unduplicating list
 
