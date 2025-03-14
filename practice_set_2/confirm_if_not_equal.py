@@ -13,3 +13,12 @@ def not_equal(input_1, input_2):
         return 'Not Equal'
     else:
         return 'Equal'
+try:
+    first_input = int(first_input)
+    second_input = int(second_input)
+    print(not_equal(first_input, second_input))
+
+except:
+    print('>>Not a number')
+ # ===============================================
+ 
