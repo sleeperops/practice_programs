@@ -5,7 +5,7 @@
 # try if the input can be converted to an integer
 # > if so add the number to the input_numbers list
 # else if it is not an integer print 'not a number' and break from the loop
-# sort the input_numbers list using sort() function
+# sort the input_numbers list using sort() method
 # print the lowest one
 
 input_numbers = []
@@ -18,5 +18,5 @@ while True:
         print('>>Input is not a number! ')
         break
 print(input_numbers)
-sort(input_numbers)
+input_numbers.sort
 print(input_numbers)
