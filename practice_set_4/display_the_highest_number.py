@@ -18,3 +18,5 @@ while True:
     except:
         print('>>Input is not a number! ')
         break
+input_numbers.sort()
+print(f'Highest Number: {input_numbers[-1]}')
