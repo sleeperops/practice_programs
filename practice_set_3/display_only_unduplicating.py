@@ -13,22 +13,26 @@
 
 input_numbers = []
 unduplicating_list = []
+clone_unduplicating_list = [] # to make sure the program does not remove an item from unduplicatin_list while iterating through it
 marked_as_duplicate = []
 
 for i in range(10):
     user_input = input(f'Enter a number {i + 1}: ')
     input_numbers.append(user_input)
 
-for numbers in input_numbers:
+for numbers in input_numbers:  # creates an unduplicating list
     if numbers not in unduplicating_list:
         unduplicating_list.append(numbers)
     else:
         marked_as_duplicate.append(numbers)
+        
+for numbers in unduplicating_list:  # copies all the numbers from the unduplicating list 
+    clone_unduplicating_list.append(numbers)
     
-for number in unduplicating_list:
+for number in unduplicating_list:  # removes all the numbers that is marked as duplicate
     if number in marked_as_duplicate:
-        unduplicating_list.remove(number)
+        clone_unduplicating_list.remove(number)
         
 
-print(unduplicating_list)
+print(clone_unduplicating_list)
     
