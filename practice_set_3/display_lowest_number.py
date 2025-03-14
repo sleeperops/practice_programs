@@ -8,3 +8,15 @@
 # sort the input_numbers list using sort() function
 # print the lowest one
 
+input_numbers = []
+while True:
+    try:
+        user_input = int(input(f'Enter a number: '))
+        input_numbers.append(user_input)
+    
+    except:
+        print('>>Input is not a number! ')
+        break
+print(input_numbers)
+sort(input_numbers)
+print(input_numbers)
