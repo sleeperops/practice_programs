@@ -8,3 +8,12 @@
 # sort the input_numbers list using sort() method
 # print the list
 
+input_numbers = []
+while True:
+    try:
+        user_input = int(input(f'Enter a number: '))
+        input_numbers.append(user_input)
+    
+    except:
+        print('>>Input is not a number! ')
+        break
