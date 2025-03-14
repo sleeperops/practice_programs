@@ -17,3 +17,5 @@ while True:
     except:
         print('>>Input is not a number! ')
         break
+input_numbers.sort()
+print(input_numbers)
