@@ -12,3 +12,12 @@ def smaller_number(first_num, second_num):
         return second_num
     else:
         return 'equal'
+
+try:
+    first_input = int(first_input)
+    second_input = int(second_input)
+    print(smaller_number(first_input, second_input))
+
+except:
+    print('>>Not a number')
+ # ===============================================
