@@ -12,6 +12,10 @@ input_numbers = []
 while True:
     try:
         user_input = int(input(f'Enter a number: '))
+        if user_input in input_numbers:
+            print('Duplicate')
+        else:
+            print('Unique')
         input_numbers.append(user_input)
     
     except:
