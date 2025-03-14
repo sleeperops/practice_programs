@@ -7,15 +7,18 @@
 
 input_a = input('Input the first number: ')
 input_b = input('Input the second number: ')
+
+
+def sum_ab(a, b):
+    return a + b
 try:
     input_a = int(input_a)
     input_b = int(input_b)
+    print(f'Answer: {sum_ab(input_a, input_b)}')
 except:
     print('>>Not numbers')
 # ==============================================
 
 
-def sum_ab(a, b):
-    return a + b
 
-print(f'Answer: {sum_ab(input_a, input_b)}')
+
