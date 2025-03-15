@@ -15,3 +15,24 @@
 # for every loop, check if the corresponding value of the key is more than 1
 # if it is more than 1, store in a list called 'marked_as_duplicates'.
 # print 'marked_as_duplicates' to display a list of duplicating numbers
+
+input_list = []
+occurrence_counter_dict = {}
+
+# gets input and stores it in a list
+for i in range(10):
+    user_input = input('Enter a number: ')
+    input_list.append(user_input)
+    
+# counts occurrence of number
+for number in input_list:
+# if the number is found in the dictionary, add 1 to count the number of its occurrence
+    if number in occurrence_counter_dict:
+        occurrence_counter_dict[number] += 1
+# if the number is not found in the dictionary, it will create one with a value of 1
+    else:
+        occurrence_counter_dict[number] = 1
+
+#test
+print(input_list)
+print(occurrence_counter_dict)
