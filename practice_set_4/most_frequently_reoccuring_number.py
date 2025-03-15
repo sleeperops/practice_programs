@@ -28,6 +28,18 @@ for number in input_list:
 # if the number is not found in the dictionary, it will create one with a value of 1
     else:
         occurrence_counter_dict[number] = 1
+        
+# Loops through the disctionary. Checks if the current key if it has the highest value
+for key in occurrence_counter_dict:
+    if int(occurrence_counter_dict[key]) > most_frequent:
+        most_frequent = key
+
+print(f'Most frequent = {most_frequent}')
+
+print(occurrence_counter_dict)
+print(input_list)
+   
+    
 
 print(occurrence_counter_dict) # test
 print(input_list) # test
