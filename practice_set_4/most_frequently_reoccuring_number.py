@@ -48,8 +48,6 @@ for key in occurrence_counter_dict:
     if occurrence_counter_dict[key] == highest_value:
         most_frequent.append(key)
 
-print(f'highest_value = {highest_value}')
-print(f'Most frequent = {most_frequent}')
 
-print(occurrence_counter_dict) # test
-print(input_list) # test
+print(f'Number/s with most duplicates = {most_frequent}')
+
