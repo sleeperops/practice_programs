@@ -33,6 +33,12 @@ for number in input_list:
     else:
         occurrence_counter_dict[number] = 1
 
-#test
-print(input_list)
-print(occurrence_counter_dict)
+# if the current key being iterated has a value of more than 1 mark it as duplicate
+
+marked_as_duplicate = []
+for key in occurrence_counter_dict:
+    if occurrence_counter_dict[key] > 1:
+        marked_as_duplicate.append(key)
+        
+print(f'Numbers that are duplicates: {marked_as_duplicate}')
+
