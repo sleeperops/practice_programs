@@ -9,3 +9,13 @@
 # if not, append the number in occurence_counter_dict as a key with a value of 1
 # > the key will refer to the number, and the value will refer to the occurence 
 # if it already exist in occurence_counter_dict, add 1 to the value, implying that the number only appeared once
+
+input_list = []
+occurence_counter_dict = {}
+most_frequent = 0
+
+
+# gets input and stores it in a list
+for i in range(10):
+    user_input = input('Enter a number: ')
+    input_list.append(user_input)
