@@ -1,1 +1,17 @@
+# displays all inputs with duplicates
 
+# initialize a list_called 'input_list'
+# initialize an 'occurrence_counter_dict' dictionary to count how many times the number occured
+# run a for loop 10 times
+# for each loop, ask an input
+# append each input in input_list
+# run a for loop in the input_list
+# for every loop, check if the number is in the occurrence_counter_dict
+# if not, append the number in occurrence_counter_dict as a key with a value of 1,  implying that the number only appeared once
+# > the key will refer to the number, and the value will refer to the occurence of that number
+# if it already exist in occurrence_counter_dict, add 1 to the value, implying that the number appeared more than once
+
+# use a for loop to loop through occurrence_count_dict
+# for every loop, check if the corresponding value of the key is more than 1
+# if it is more than 1, store in a list called 'marked_as_duplicates'.
+# print 'marked_as_duplicates' to display a list of duplicating numbers
