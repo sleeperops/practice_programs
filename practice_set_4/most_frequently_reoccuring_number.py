@@ -7,15 +7,15 @@
 # append each input in input_list
 # run a for loop in the input_list
 # for every loop, check if the number is in the occurrence_counter_dict
-# if not, append the number in occurrence_counter_dict as a key with a value of 1
+# if not, append the number in occurrence_counter_dict as a key with a value of 1,  implying that the number only appeared once
 # > the key will refer to the number, and the value will refer to the occurence of that number
-# if it already exist in occurrence_counter_dict, add 1 to the value, implying that the number only appeared once
+# if it already exist in occurrence_counter_dict, add 1 to the value, implying that the number appeared more than once
 
 # initialize a list named 'most_frequent' which describes the most frequently occuring numbers
 # initialize a variable named 'highest_value' which describes the highest value in the dictionary
 # In the occurrence_counter_dict, search for the keys with the highest value and store it as highest_value
 # Search occurence_counter_dict for all the keys with the highest values, store them in most_frequent 
-# print most_frequent to display all of the most frequently occuring numbers
+# print most_frequent to display all of the most frequently occuring numbers or the numbers with most duplicates
 
 input_list = []
 occurrence_counter_dict = {}
