@@ -3,5 +3,4 @@
 # print input
 
 user_input = input('Enter a sentence with leading spaces: ')
-user_input.lstrip()
-print(user_input)
+print(user_input.lstrip())
