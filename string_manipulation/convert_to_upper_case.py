@@ -1,6 +1,5 @@
-# Ask for user to enter their name
-# Apply .upper() to convert all characters to uppercase
-# print the result
+# Prompt the user to enter their full name
+user_input = input("Enter your full name: ")
 
-user_input = input('Enter your full name: ')
+# Capatilize the input and print the result
 print(user_input.upper())
