@@ -1,9 +1,16 @@
 # Prompt user to enter a text.
-# Apply .lower() to the string.
-# Use .replace() to replace the first index of the string with an uppercase version.
-# Print the result.
+# Write the first letter of the input_text to another variable called "output_text"
+# Apply .upper() to output text
+# Apply .lower() to input text
+# Loop through the input_text (excluding index zero) and write it into the output_text
+# Print the result
 
-text_input = input("Enter a text in any casing: ")
-text_input = text_input.lower()
-text_input = text_input.replace(text_input[0], text_input[0].upper())
-print(text_input)
+input_text = input("Enter a text in any casing: ")
+output_text = input_text[0].upper()
+input_text = input_text.lower()
+
+for char in input_text[1:]:
+    output_text += char
+
+print(output_text)
+
