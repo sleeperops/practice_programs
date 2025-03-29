@@ -1,11 +1,10 @@
-# Prompt the user to input a text 
-# Loop through the text. If the character is in uppercase, create a lowercase version and write it into the output_text
-# Else if the character is in lowercase, create an uppercase version and write it into the output_text
-# Print the output
+# Prompt the user to input a text.
+text = input("Enter a text: ")
 
-text = "this IS A tEsT StRiNG"
+# Variable in which the output will be written into.
 output_text = ""
 
+# If the character is in lowercase, write in uppercase. Otherwise if it is in uppercase, write it in lowercase.
 for char in text:
     if char == char.upper(): # character is in uppercase
         char = char.lower()
@@ -13,5 +12,6 @@ for char in text:
     elif char == char.lower(): # character is in lowercase
         char = char.upper()
         output_text += char
-print(text)
-print(output_text)
+
+# Print the output
+print(f"Swapped casing: {output_text}")
