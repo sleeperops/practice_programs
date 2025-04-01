@@ -15,9 +15,9 @@ def mock_center(text, length, pad):
         prefix = -(-pad_ammount // 2) # This divides the pad_ammount by 2 and rounds it up
         suffix = (pad_ammount//2) # This divides the pad_ammount by 2 and rounds it down
     else: 
-        prefix = pad * (int(pad_ammount /2))
-        suffix = pad * (int(pad_ammount /2))
+        prefix = (int(pad_ammount /2))
+        suffix = (int(pad_ammount /2))
     
-    return f"{prefix}{text}{suffix}"
+    return f"{pad * int(prefix)}{text}{pad * int(suffix)}"
 
 print(mock_center(text_input, length_input, pad_char_input))
