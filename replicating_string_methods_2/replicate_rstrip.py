@@ -5,17 +5,16 @@
 # Prompts the user to input a text
 input_string = input("Enter a text with spaces at the end: ")
 
-
 def mock_rstrip(input_string):
     input_string = str(input_string) # To allow the function to use string methods like index
-    output_string = ""
+    length_of_input = len(input_string) # Will be used in determining
+    counter = 0 
     for characters in input_string[::-1]: # Loops through the characters in the input_text.
-        if characters == " ": # If both the character is a whitespace and state = 0, skip.
-            continue
-        elif characters != " ": # If either the character a non-whitespace or state = 1, write.
-            state = 1
-            break
-    return input_string[0:input_string.index(characters)+1] # returns from the start without the whitespace at the end
-
+        counter += 1 # Will be used to keep track of the index
+        if characters != " ":  # If character is not a whitespace
+            length_of_input = len(input_string) # Get the length of the input string
+            current_index = length_of_input - counter # Subtract the length from the counter to determine the index of the current iteration
+            return input_string[0:current_index + 1] # Print the input from the start to the last iteration (+1 to include the last one)
+       
 # Print result.
 print(f"{mock_rstrip(input_string)}This should be close to the text")
