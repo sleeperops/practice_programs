@@ -1,6 +1,6 @@
 # Prompt the user to enter an input text
 # Prompt the user to enter a prefix to check
-# Loop through the prefix and for every character, check if it matches the ones in the input_text.
+# Check if the beginning of both text matches
 # If the loop finishes with all characters matching, return TRUE
 # Otherwise, return FALSE 
 
@@ -8,20 +8,17 @@ input_text = input("Enter a text: ")
 prefix = input("Enter the prefix you want to check: ")
 
 def mock_startswith(text, prefix):
-    text= str(prefix)
     prefix = str(prefix)
-
-    # For every character in the prefix, check the input_text
-    for prefix_characters in prefix:
-        for input_characters in input_text:
-            if prefix_characters == input_characters:
-                break # problem here, I want it to continue in the main for loop
-            elif prefix_characters != input_characters:
-                return False
-                
-        # If program finished without causing an error, return TRUE
-        return True
+    text = str(text)
     
-print(mock_startswith(input_text, prefix))
+    index_mark = 0 # Serves to mark the index of the loop 
+    for _ in range(len(prefix)): # The number of loops depends on the length of the prefix
+        if prefix[index_mark] == text[index_mark]:
+            index_mark += 1
+            continue
+        elif prefix[index_mark] != text[index_mark]:
+            return False
+    return True
 
-# ! If len of prefix is greater than input, return false 
+
+print(mock_startswith(input_text, prefix))
