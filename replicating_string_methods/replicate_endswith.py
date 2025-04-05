@@ -3,6 +3,13 @@ input_text= input("Enter a sample_text: ")
 suffix = input("Enter the suffix: ")
 
 def better_endswith(text, suffix):
+    """
+    Checks if a suffix is present in the end of a text.
+    Accepts text and suffix as parameters,
+    returns a boolean value of True or False
+    """
+
+    # Converts the parameters to string to allow iteration
     text  = str(text)
     suffix = str(suffix)
 
@@ -18,15 +25,17 @@ def better_endswith(text, suffix):
     
     # Cuts a section in the end of the text based on the length of the suffix
     for index in range(starting_index, len(text)):  # Loop through that section
-        print(f"Current text index: {index}, current suffix index {suffix_index}")
 
+        # If characters match
         if suffix[suffix_index] == text[index]:
-            suffix_index += 1  # Increments to move through the suffix by one value
-            print(f"Current characters match")
-            continue  # Character is matching with each other
-        elif suffix[suffix_index] != text[index]:
-            return False  # Characters fails to mismatch
-    return True  # Loop finishes without any mismatching characters
+            suffix_index += 1  # Increments by 1 to move through the suffix
+            continue  # Continue through the loop
 
+        # If characters fails to smatch
+        elif suffix[suffix_index] != text[index]:  
+            return False  
+    return True  # If loop finishes without any mismatching characters
+
+# Prints the result
 print(better_endswith(input_text, suffix))
-print(input_text.endswith(suffix))
+
